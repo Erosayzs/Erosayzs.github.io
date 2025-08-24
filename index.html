@@ -3,37 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>落地页</title>
+  <title>我的落地页</title>
   <style>
     body {
       font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #f9f9f9, #e0eafc);
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
-      margin: 0;
-      background: #f4f4f4;
+      padding: 40px 20px;
     }
     h1 {
-      font-size: 2rem;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
+      color: #333;
     }
-    a {
+    .link-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+      max-width: 300px;
+    }
+    .link-btn {
+      display: block;
+      text-align: center;
+      padding: 12px 0;
+      border-radius: 8px;
       font-size: 1.2rem;
       color: white;
-      background: #007bff;
-      padding: 10px 20px;
-      border-radius: 8px;
       text-decoration: none;
+      transition: transform 0.2s ease, opacity 0.2s ease;
     }
-    a:hover {
-      background: #0056b3;
+    .link-btn:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
     }
+    /* 多彩按钮颜色 */
+    .btn-blue { background: #007bff; }
+    .btn-green { background: #28a745; }
+    .btn-orange { background: #fd7e14; }
+    .btn-purple { background: #6f42c1; }
+    .btn-red { background: #dc3545; }
   </style>
 </head>
 <body>
   <h1>欢迎来到我的落地页</h1>
-  <a href="https://example.com" target="_blank">点击跳转</a>
+  <div class="link-list">
+    <a href="https://example1.com" target="_blank" class="link-btn btn-blue">产品介绍</a>
+    <a href="https://example2.com" target="_blank" class="link-btn btn-green">立即注册</a>
+    <a href="https://example3.com" target="_blank" class="link-btn btn-orange">最新活动</a>
+    <a href="https://example4.com" target="_blank" class="link-btn btn-purple">联系我们</a>
+    <a href="https://example5.com" target="_blank" class="link-btn btn-red">帮助中心</a>
+  </div>
 </body>
 </html>
